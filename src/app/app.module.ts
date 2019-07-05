@@ -1,16 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {Injectable, NgModule} from '@angular/core';
 
 import { AppComponent } from './app.component';
-
+import { YoutobeComponent } from './youtobe/youtobe.component';
+import { YoutobePlaylistComponent } from './youtobe-playlist/youtobe-playlist.component';
+import {AppRoutingModule} from './app-routing.module';
+@Injectable()
+export class YoutobeService {
+}
+// noinspection AngularInvalidImportedOrDeclaredSymbol
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    YoutobeComponent,
+    YoutobePlaylistComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [YoutobeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
