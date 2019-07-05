@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { YoutobeComponent } from './youtobe/youtobe.component';
 import { YoutobePlaylistComponent } from './youtobe-playlist/youtobe-playlist.component';
 import {AppRoutingModule} from './app-routing.module';
+import {DictionaryPageComponent} from './dictionary-page/dictionary-page.component';
+
 @Injectable()
 export class YoutobeService {
 }
@@ -13,7 +15,8 @@ export class YoutobeService {
   declarations: [
     AppComponent,
     YoutobeComponent,
-    YoutobePlaylistComponent
+    YoutobePlaylistComponent,
+    DictionaryPageComponent
   ],
   imports: [
     BrowserModule,
